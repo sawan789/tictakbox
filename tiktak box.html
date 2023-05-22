@@ -79,6 +79,9 @@ let currentplayer = "X";
 function boxclk(id){
 
 var element =document.getElementById(id);
+if(element.innerText != ""){
+    return;
+}
 
 element.innerText =currentplayer
 currentplayer = currentplayer =="X" ? "0" : "X";
